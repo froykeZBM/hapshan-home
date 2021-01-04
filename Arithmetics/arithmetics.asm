@@ -55,6 +55,7 @@ sum:
     mov     cx, [bp + 6]
     mov     bx, [bp + 4]
     
+     
     cmp     cx, 0
     je      end
     
