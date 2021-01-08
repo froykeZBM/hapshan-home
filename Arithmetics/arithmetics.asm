@@ -12,7 +12,7 @@ jmp main
 DATA:
 
 first_arg   dw 10
-second_arg  dw 3
+second_arg  dw 21
 
 
 
@@ -61,8 +61,6 @@ sum:
     
     ;; if cx is 0 nothing to add   (this is alsso stopping conditiob for recursion)
     and     cx, 0ffffh
-    push    bx
-    pop     bx
     jz      end
     
     mov     bx, cx
